@@ -21,8 +21,8 @@ var $ = require("jquery"),
 			.$target
 			.children(config.el)
 			.css({
-				"width": size,
-				"height": size
+				"width": el_size,
+				"height": el_size
 			});
 
 		return {
