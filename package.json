@@ -1,0 +1,19 @@
+{
+  "name": "divgrid",
+  "version": "1.0.0",
+  "description": "function which creates a small grid of html elements and provies methods to access a cell",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simonwinkler/divgrid.git"
+  },
+  "author": "Simon Winkler <sw@fastseeders.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonwinkler/divgrid/issues"
+  },
+  "homepage": "https://github.com/simonwinkler/divgrid"
+}
