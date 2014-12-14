@@ -18,6 +18,6 @@
   "dependencies": {
     "jquery": "latest",
     "lodash": "latest"
-  }
+  },
   "homepage": "https://github.com/simonwinkler/divgrid"
 }
