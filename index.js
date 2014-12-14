@@ -22,7 +22,9 @@ var $ = require("jquery"),
 			.children(config.el)
 			.css({
 				"width": el_size,
-				"height": el_size
+				"height": el_size,
+				"box-sizing": "border-box",
+				"float": "left"
 			});
 
 		return {
