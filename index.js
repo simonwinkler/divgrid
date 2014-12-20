@@ -16,7 +16,8 @@ var $ = require("jquery"),
 			el_size = config.$target.width() / config.length;
 
 		config
-			.$target.append(grid_str);
+			.$target
+			.append(grid_str);
 		config
 			.$target
 			.children(config.el)
@@ -29,9 +30,15 @@ var $ = require("jquery"),
 
 		return {
 			get: function (x, y) {
-				return $(config.$target.children()[x + (y * 10)]);
+				return 
+					x < 0 ||
+					y < 0 ||
+					x > config.size ||
+					y > config.size ?
+						false :
+						$(config.$target.children()[x + (y * config.size)]);
 			}
-		}
+		};
 
 	};
 
