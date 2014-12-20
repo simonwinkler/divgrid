@@ -5,7 +5,7 @@ var $ = require("jquery"),
     
     divgrid = function (config) {
 
-        // config.size
+        // config.length
         // config.el
         // config.$target
         
@@ -32,10 +32,10 @@ var $ = require("jquery"),
             get: function (x, y) {
                 return  x < 0 ||
                         y < 0 ||
-                        x >= config.size ||
-                        y >= config.size ?
+                        x >= config.length ||
+                        y >= config.length ?
                             false :
-                            $(config.$target.children()[x + (y * config.size)]);
+                            $(config.$target.children()[x + (y * config.length)]);
             }
         };
 
